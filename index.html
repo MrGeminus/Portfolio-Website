@@ -259,7 +259,7 @@
       <div class="col s12">
         <div class="col m1 l1"></div>
         <div class="col s12 m10 l10">
-          <form id="contact_form" method="POST" action="urostomic94@gmail.com">
+          <form id="contact_form" method="POST" action="php/process.php">
             <div class="col s12 m12 l12">
               <h5 class="white-text">Contact</h5>
               <div class="row">
@@ -284,6 +284,12 @@
               </div>
               <div class="row">
                 <div class="input-field col l8 s12">
+                  <input class="white-text" id="subject" type="text" name="subject" class="validate" />
+                  <label for="subject">Subject</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col l8 s12">
                   <textarea id="textarea1" class="materialize-textarea white-text" name="message"></textarea>
                   <label for="textarea1">Message</label>
                 </div>
@@ -295,7 +301,7 @@
               </div>
               <div class="row">
                 <div class="col l8 s12">
-                  <button class="btn waves-effect fullLength waves-light" type="submit" name="action">
+                  <button id="submit_btn" class="btn waves-effect fullLength waves-light" type="submit" name="action">
                     SEND MESSAGE
                     <i class="material-icons right">send</i>
                   </button>
@@ -314,7 +320,7 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
