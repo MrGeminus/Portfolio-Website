@@ -1,4 +1,5 @@
 <?php
+var_dump ($_SERVER["REQUEST_URI"]);
 if(isset($_POST['submit'])){
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
