@@ -115,17 +115,27 @@ li .active{
   background-color: #0d47a1;
 }
 #home {
-  height: 100vh;
+  position: relative;
+  height: 790px;
+  width: 900%;
+  background-image: url(../img/background.png);
+  background-position: left bottom;
+  animation: moveForest 15s linear infinite;
   .right-moved-icons{
   margin-top: 30px;  
   margin-left: 15px;
   margin-right: 11px;
   width: 37px;
   height: 37px;
-}}
+  }
+
+}
 #projects{
   height: 100vh;
 }
 #contact{
   height: 100vh;
+}
+@keyframes moveForest{
+  100%{transform: translateX(-5%)}
 }
