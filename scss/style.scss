@@ -116,10 +116,11 @@ li .active{
 }
 #home {
   position: relative;
-  height: 790px;
-  width: 900%;
+  height: 100vh;
+  background-size: auto 100%;
+  background-repeat: repeat-x;
   background-image: url(../img/background.png);
-  background-position: left bottom;
+  background-position: 0 0;
   animation: moveForest 15s linear infinite;
   .right-moved-icons{
   margin-top: 30px;  
@@ -128,7 +129,6 @@ li .active{
   width: 37px;
   height: 37px;
   }
-
 }
 #projects{
   height: 100vh;
@@ -137,5 +137,6 @@ li .active{
   height: 100vh;
 }
 @keyframes moveForest{
-  100%{transform: translateX(-5%)}
+  from {background-position: 0 0;}
+  to{background-position: -100% 0;}
 }
