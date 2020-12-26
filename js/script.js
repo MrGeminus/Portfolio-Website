@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function validateForm(e) {
   e.preventDefault();
   const xhr = new XMLHttpRequest();
-  xhr.open("POST", "http://process.mrgeminus.com/process.php", true);
+  xhr.open("POST", "http://process.mrgeminus.com./process.php", true);
   xhr.onload = function () { console.log(xhr.responseText) };
   xhr.send(new FormData(contactForm));
 }
