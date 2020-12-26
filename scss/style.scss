@@ -132,12 +132,18 @@ li .active{
   }
 }
 #projects{
-  height: 100vh;
+  min-height: 100vh;
   background-color: #0d1125;
 }
 #contact{
+  min-height: 100vh;
 }
 @keyframes moveForest{
   from {background-position: 0 0;}
   to{background-position: -100% 0;}
+}
+@media(max-width: 360px) and (orientation: portrait) {
+  footer a{
+    display: none;
+  }
 }

@@ -193,49 +193,37 @@
   <div class="section grey lighten-4 scrollspy" id="contact">
     <div class="container">
       <h5 class="black-text">Contact</h5>
-      <form id="contact_form" method="POST" action="http://mrgeminus.com/process.php">
-        <div class="row">
-          <div class="input-field col l4 m6 s12">
-            <input class="black-text" id="first_name" type="text" name="firstName" />
-            <label for="first_name">First Name<span class="red-star">*</span></label>
-            <span class="helper-text" data-error=""></span>
-          </div>
-          <div class="input-field col l4 m6 s12">
-            <input class="black-text" id="last_name" type="text" name="lastName" />
-            <label for="last_name">Last Name<span class="red-star">*</span></label>
-            <span class="helper-text" data-error=""></span>
-          </div>
+      <form id="contact_form">
+        <div class="input-field">
+          <input class="black-text" id="first_name" type="text" name="firstName" />
+          <label for="first_name">First Name<span class="red-star">*</span></label>
+          <span class="helper-text" data-error=""></span>
         </div>
-        <div class="row">
-          <div class="input-field col l8 s12">
-            <input class="black-text" id="email" type="email" name="email" />
-            <label for="email">Email<span class="red-star">*</span></label>
-            <span class="helper-text" data-error=""></span>
-          </div>
+        <div class="input-field">
+          <input class="black-text" id="last_name" type="text" name="lastName" />
+          <label for="last_name">Last Name<span class="red-star">*</span></label>
+          <span class="helper-text" data-error=""></span>
         </div>
-        <div class="row">
-          <div class="input-field col l8 s12">
-            <input class="black-text" id="subject" type="text" name="subject" />
-            <label for="subject">Subject<span class="red-star">*</span></label>
-            <span class="helper-text" data-error=""></span>
-          </div>
+        <div class="input-field">
+          <input class="black-text" id="email" type="email" name="email" />
+          <label for="email">Email<span class="red-star">*</span></label>
+          <span class="helper-text" data-error=""></span>
         </div>
-        <div class="row">
-          <div class="input-field col l8 s12">
-            <textarea id="textarea1" class="materialize-textarea black-text" name="message"></textarea>
-            <label for="textarea1">Message<span class="red-star">*</span></label>
-            <span class="helper-text" data-error=""></span>
-          </div>
+        <div class="input-field">
+          <input class="black-text" id="subject" type="text" name="subject" />
+          <label for="subject">Subject<span class="red-star">*</span></label>
+          <span class="helper-text" data-error=""></span>
         </div>
-        <div class="row">
-          <div class="col l8 s12">
-            <button id="submit_btn" class="btn waves-effect blue darken-4 fullLength waves-light" type="submit"
-              name="submit">
-              SEND MESSAGE
-              <i class="material-icons right">send</i>
-            </button>
-          </div>
+        <div class="input-field">
+          <textarea id="textarea1" class="materialize-textarea black-text" name="message"></textarea>
+          <label for="textarea1">Message<span class="red-star">*</span></label>
+          <span class="helper-text" data-error=""></span>
         </div>
+        <button id="submit_btn" class="btn waves-effect blue darken-4 fullLength waves-light" type="submit"
+          name="submit">
+          SEND MESSAGE
+          <i class="material-icons right">send</i>
+        </button>
       </form>
     </div>
   </div>
