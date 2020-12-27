@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   let sidenav = document.querySelectorAll(".sidenav");
   let scrollspy = document.querySelectorAll('.scrollspy');
   let materialboxed = document.querySelectorAll('.materialboxed');
+  let animationBackground = document.getElementById("home");
+  animationBackground.style.opacity = "1";
   // Initializing the sidenav
   M.Sidenav.init(sidenav, { edge: 'right' });
   // Initializing the scrollspy
@@ -14,13 +16,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   // Initializing the materialboxed
   M.Materialbox.init(materialboxed, {});
-  contactForm.addEventListener("submit", validateForm);
 });
-// Validateing the form
-function validateForm(e) {
-  e.preventDefault();
-  const xhr = new XMLHttpRequest();
-  xhr.open("POST", "http://process.mrgeminus.com./process.php", true);
-  xhr.onload = function () { console.log(xhr.responseText) };
-  xhr.send(new FormData(contactForm));
-}

@@ -1,3 +1,14 @@
+@font-face{
+  src: url(../fonts/retro.ttf);
+  font-family: retro;
+}
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
 nav{
   border: none;
   box-shadow: none;
@@ -6,27 +17,31 @@ nav{
 .nav-wrapper{
   .brand-logo{
     height: 100%;
-  svg{
+  }  
+  .brand-logo svg{
     width: 100%;
     height: 40%;
-  }}
-.push-left{
-  margin-right: 10.3rem;
-  li{
-    a{
+  }
+  ul, li{
+    height: 100%;
+  }
+  ul li a{
       width: 100%;
       height: 100%;
-      font-size: 1.3rem;
-      padding: 0rem 2.5rem;
+      font-size: 1.4rem;
+      line-height: 68px;
+      font-family: retro;
+      padding: 0rem 1.9rem;
     }
-  }
   li:hover{
     background-color: #0d47a1;
   }
-}
-}
-.material-icons{
-  font-size: 2.5rem !important;
+  li .active{
+    background-color: #0d47a1;
+  }
+  .material-icons{
+    font-size: 2.8rem !important;
+  }  
 }
 }
 }
@@ -36,33 +51,23 @@ nav{
       width: 100%;
       height: 100%;
       font-size: 1.3rem;
+      font-family: retro;
       padding: 1.3rem 0rem;
+
     }
   }
   li:hover{
     background-color: #0d47a1;
-  }}
-#backgroundImg{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.image-overlay{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0.6;
-}
-.name{
-  opacity: 0;
+  }
+  li .active{
+    background-color: #0d47a1;
+  }
 }
 
-#download-source{
-  margin-top: 30px;
-  background-color: #1D2252 !important;
-}
 .input-field label {
   color: #000000;
+  font-family: retro;
+  font-size: 1.3rem;
 }
 .input-field input[type="text"]:focus + label,
 .input-field input[type="email"]:focus + label,
@@ -77,6 +82,12 @@ nav{
 }
 .fullLength {
   width: 100%;
+  font-family: retro;
+  font-size: 1.4rem;
+  line-height: 40px;
+  .material-icons{
+    line-height: 36px;
+  }
 }
 footer a{
   margin-left: 15px;
@@ -112,38 +123,150 @@ footer a{
 .red-star{
   color: #f44336;
 }
-li .active{
-  background-color: #0d47a1;
-}
+
 #home {
   position: relative;
   height: 100vh;
+  opacity: 0;
   background-size: auto 100%;
   background-repeat: repeat-x;
   background-image: url(../img/background.png);
   background-position: 0 0;
-  animation: moveForest 15s linear infinite;
+  animation: moveForest 15s linear;
+  transition: opacity ease-in 0.7s;
+  h1{
+    font-family: retro;
+  } 
+  h5{
+    font-family: retro;
+    font-size: 2.1rem !important;
+  }
+  #download-source{
+    font-family: retro;
+    font-size: 1.4rem;
+    line-height: 42px;
+    margin-top: 30px;
+    background-color: #1D2252 !important;
+    .material-icons{
+      line-height: 38px;
+    }
+  }
   .right-moved-icons{
-  margin-top: 30px;  
-  margin-left: 15px;
-  margin-right: 11px;
+  margin-top: 35px;  
+  margin-left: 25px;
+  margin-right: 29px;
   width: 37px;
-  height: 37px;
+  height: 74px;
   }
 }
 #projects{
   min-height: 100vh;
   background-color: #0d1125;
+  h5{
+    font-family: retro;
+    font-size: 2.1rem !important;
+  }
+  .card-content{
+    .card-title{
+      font-family: retro;
+    }
+  }
+  .card-reveal{
+    h6, .card-title, .chip, p{
+      font-family: retro;
+    }
+  }
 }
 #contact{
   min-height: 100vh;
+  h5{
+    font-family: retro;
+    font-size: 2.1rem !important;
+  }
+}
+footer {
+  font-size: 1.3rem;
+  font-family: retro;
+}
+.animated-mole{
+  position: absolute;
+  width: 9rem;
+  height: 9rem;
+  bottom: 4.5rem;
+  right: 4.5rem;
+  background-image: url(../img/__mole_go_in_left_009.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  animation: animateMole 3s linear;
+  animation-delay: 15.5s;
 }
 @keyframes moveForest{
   from {background-position: 0 0;}
   to{background-position: -100% 0;}
 }
-@media(max-width: 360px) and (orientation: portrait) {
-  footer a{
+@keyframes animateMole{
+  0%{background-image: url(../img/__mole_come_out_left_000.png);}
+  5%{background-image: url(../img/__mole_come_out_left_001.png);}
+  10%{background-image: url(../img/__mole_come_out_left_002.png);}
+  15%{background-image: url(../img/__mole_come_out_left_003.png);}
+  20%{background-image: url(../img/__mole_come_out_left_004.png);}
+  25%{background-image: url(../img/__mole_come_out_left_005.png);}
+  30%{background-image: url(../img/__mole_come_out_left_006.png);}
+  35%{background-image: url(../img/__mole_come_out_left_007.png);}
+  40%{background-image: url(../img/__mole_come_out_left_008.png);}
+  45%{background-image: url(../img/__mole_come_out_left_009.png);}
+  50%{background-image: url(../img/__mole_idle_left_000.png);}
+  55%{background-image: url(../img/__mole_go_in_left_000.png);}
+  60%{background-image: url(../img/__mole_go_in_left_001.png);}
+  65%{background-image: url(../img/__mole_go_in_left_002.png);}
+  70%{background-image: url(../img/__mole_go_in_left_003.png);}
+  75%{background-image: url(../img/__mole_go_in_left_004.png);}
+  80%{background-image: url(../img/__mole_go_in_left_005.png);}
+  85%{background-image: url(../img/__mole_go_in_left_006.png);}
+  90%{background-image: url(../img/__mole_go_in_left_007.png);}
+  95%{background-image: url(../img/__mole_go_in_left_008.png);}
+  100%{background-image: url(../img/__mole_go_in_left_009.png);}
+}
+@media(max-width: 375px) and (orientation: portrait) {
+  .animated-mole{
+  bottom: 3.3rem;
+  right: 4rem;
+  footer{
+    text-align: center;
+    font-size: 1.1rem;
+  a{
     display: none;
   }
+}
+}
+@media(min-width: 380px) and (max-width: 415px) and (orientation: portrait) {
+  }
+  footer{
+    text-align: center;
+    font-size: 1.2rem;
+  a{
+    display: none;
+  }
+}
+}
+@media(max-width: 520px){
+  footer{
+    text-align: center;
+  a{
+    display: none;
+    }
+}
+}
+.hoverable:hover {
+  transition: box-shadow .25s;
+  box-shadow: 0 8px 17px 0 rgba(132,155,240, 0.2), 0 6px 20px 0 rgba(132,155,240, 0.19);
+}
+.card-image{
+  img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+}
 }
